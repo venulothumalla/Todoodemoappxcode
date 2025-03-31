@@ -80,7 +80,7 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
-            Text("Login")
+            Text("Login Todoo")
                 .font(.largeTitle)
                 .padding()
 
