@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		348231F52D77FF4F002F7D66 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348231F42D77FF4F002F7D66 /* LoginView.swift */; };
+		348231F72D77FF90002F7D66 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348231F62D77FF90002F7D66 /* AuthManager.swift */; };
+		348231F92D77FFC1002F7D66 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348231F82D77FFC1002F7D66 /* KeychainHelper.swift */; };
+		348231FC2D783113002F7D66 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348231FB2D783113002F7D66 /* ToDoView.swift */; };
+		34A525AB2D3A5F9500F6A72F /* TodooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A525AA2D3A5F9500F6A72F /* TodooApp.swift */; };
+		34A525AD2D3A5F9500F6A72F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A525AC2D3A5F9500F6A72F /* ContentView.swift */; };
+		34A525AF2D3A5F9600F6A72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A525AE2D3A5F9600F6A72F /* Assets.xcassets */; };
+		34A525B22D3A5F9600F6A72F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A525B12D3A5F9600F6A72F /* Preview Assets.xcassets */; };
+		34A525BC2D3A5F9600F6A72F /* TodooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A525BB2D3A5F9600F6A72F /* TodooTests.swift */; };
+		34A525C62D3A5F9600F6A72F /* TodooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A525C52D3A5F9600F6A72F /* TodooUITests.swift */; };
+		34A525C82D3A5F9600F6A72F /* TodooUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A525C72D3A5F9600F6A72F /* TodooUITestsLaunchTests.swift */; };
+		34A525D52D3A617000F6A72F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A525D42D3A617000F6A72F /* Task.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34A525B82D3A5F9600F6A72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A5259F2D3A5F9500F6A72F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34A525A62D3A5F9500F6A72F;
+			remoteInfo = Todoo;
+		};
+		34A525C22D3A5F9600F6A72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34A5259F2D3A5F9500F6A72F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34A525A62D3A5F9500F6A72F;
+			remoteInfo = Todoo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		348231F42D77FF4F002F7D66 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		348231F62D77FF90002F7D66 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		348231F82D77FFC1002F7D66 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		348231FA2D780E09002F7D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		348231FB2D783113002F7D66 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		34A525A72D3A5F9500F6A72F /* Todoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A525AA2D3A5F9500F6A72F /* TodooApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodooApp.swift; sourceTree = "<group>"; };
+		34A525AC2D3A5F9500F6A72F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34A525AE2D3A5F9600F6A72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34A525B12D3A5F9600F6A72F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34A525B72D3A5F9600F6A72F /* TodooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A525BB2D3A5F9600F6A72F /* TodooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodooTests.swift; sourceTree = "<group>"; };
+		34A525C12D3A5F9600F6A72F /* TodooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A525C52D3A5F9600F6A72F /* TodooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodooUITests.swift; sourceTree = "<group>"; };
+		34A525C72D3A5F9600F6A72F /* TodooUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodooUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34A525D42D3A617000F6A72F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34A525A42D3A5F9500F6A72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A525B42D3A5F9600F6A72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A525BE2D3A5F9600F6A72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34A5259E2D3A5F9500F6A72F = {
+			isa = PBXGroup;
+			children = (
+				34A525A92D3A5F9500F6A72F /* Todoo */,
+				34A525BA2D3A5F9600F6A72F /* TodooTests */,
+				34A525C42D3A5F9600F6A72F /* TodooUITests */,
+				34A525A82D3A5F9500F6A72F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34A525A82D3A5F9500F6A72F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34A525A72D3A5F9500F6A72F /* Todoo.app */,
+				34A525B72D3A5F9600F6A72F /* TodooTests.xctest */,
+				34A525C12D3A5F9600F6A72F /* TodooUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34A525A92D3A5F9500F6A72F /* Todoo */ = {
+			isa = PBXGroup;
+			children = (
+				348231FA2D780E09002F7D66 /* Info.plist */,
+				34A525AA2D3A5F9500F6A72F /* TodooApp.swift */,
+				34A525AC2D3A5F9500F6A72F /* ContentView.swift */,
+				348231F42D77FF4F002F7D66 /* LoginView.swift */,
+				34A525AE2D3A5F9600F6A72F /* Assets.xcassets */,
+				34A525B02D3A5F9600F6A72F /* Preview Content */,
+				34A525D42D3A617000F6A72F /* Task.swift */,
+				348231F62D77FF90002F7D66 /* AuthManager.swift */,
+				348231F82D77FFC1002F7D66 /* KeychainHelper.swift */,
+				348231FB2D783113002F7D66 /* ToDoView.swift */,
+			);
+			path = Todoo;
+			sourceTree = "<group>";
+		};
+		34A525B02D3A5F9600F6A72F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34A525B12D3A5F9600F6A72F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34A525BA2D3A5F9600F6A72F /* TodooTests */ = {
+			isa = PBXGroup;
+			children = (
+				34A525BB2D3A5F9600F6A72F /* TodooTests.swift */,
+			);
+			path = TodooTests;
+			sourceTree = "<group>";
+		};
+		34A525C42D3A5F9600F6A72F /* TodooUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34A525C52D3A5F9600F6A72F /* TodooUITests.swift */,
+				34A525C72D3A5F9600F6A72F /* TodooUITestsLaunchTests.swift */,
+			);
+			path = TodooUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34A525A62D3A5F9500F6A72F /* Todoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A525CB2D3A5F9600F6A72F /* Build configuration list for PBXNativeTarget "Todoo" */;
+			buildPhases = (
+				34A525A32D3A5F9500F6A72F /* Sources */,
+				34A525A42D3A5F9500F6A72F /* Frameworks */,
+				34A525A52D3A5F9500F6A72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Todoo;
+			productName = Todoo;
+			productReference = 34A525A72D3A5F9500F6A72F /* Todoo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34A525B62D3A5F9600F6A72F /* TodooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A525CE2D3A5F9600F6A72F /* Build configuration list for PBXNativeTarget "TodooTests" */;
+			buildPhases = (
+				34A525B32D3A5F9600F6A72F /* Sources */,
+				34A525B42D3A5F9600F6A72F /* Frameworks */,
+				34A525B52D3A5F9600F6A72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34A525B92D3A5F9600F6A72F /* PBXTargetDependency */,
+			);
+			name = TodooTests;
+			productName = TodooTests;
+			productReference = 34A525B72D3A5F9600F6A72F /* TodooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34A525C02D3A5F9600F6A72F /* TodooUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A525D12D3A5F9600F6A72F /* Build configuration list for PBXNativeTarget "TodooUITests" */;
+			buildPhases = (
+				34A525BD2D3A5F9600F6A72F /* Sources */,
+				34A525BE2D3A5F9600F6A72F /* Frameworks */,
+				34A525BF2D3A5F9600F6A72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34A525C32D3A5F9600F6A72F /* PBXTargetDependency */,
+			);
+			name = TodooUITests;
+			productName = TodooUITests;
+			productReference = 34A525C12D3A5F9600F6A72F /* TodooUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34A5259F2D3A5F9500F6A72F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					34A525A62D3A5F9500F6A72F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					34A525B62D3A5F9600F6A72F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 34A525A62D3A5F9500F6A72F;
+					};
+					34A525C02D3A5F9600F6A72F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 34A525A62D3A5F9500F6A72F;
+					};
+				};
+			};
+			buildConfigurationList = 34A525A22D3A5F9500F6A72F /* Build configuration list for PBXProject "Todoo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34A5259E2D3A5F9500F6A72F;
+			productRefGroup = 34A525A82D3A5F9500F6A72F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34A525A62D3A5F9500F6A72F /* Todoo */,
+				34A525B62D3A5F9600F6A72F /* TodooTests */,
+				34A525C02D3A5F9600F6A72F /* TodooUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34A525A52D3A5F9500F6A72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A525B22D3A5F9600F6A72F /* Preview Assets.xcassets in Resources */,
+				34A525AF2D3A5F9600F6A72F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A525B52D3A5F9600F6A72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A525BF2D3A5F9600F6A72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34A525A32D3A5F9500F6A72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A525AD2D3A5F9500F6A72F /* ContentView.swift in Sources */,
+				348231F92D77FFC1002F7D66 /* KeychainHelper.swift in Sources */,
+				34A525D52D3A617000F6A72F /* Task.swift in Sources */,
+				348231F52D77FF4F002F7D66 /* LoginView.swift in Sources */,
+				348231FC2D783113002F7D66 /* ToDoView.swift in Sources */,
+				34A525AB2D3A5F9500F6A72F /* TodooApp.swift in Sources */,
+				348231F72D77FF90002F7D66 /* AuthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A525B32D3A5F9600F6A72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A525BC2D3A5F9600F6A72F /* TodooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A525BD2D3A5F9600F6A72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A525C82D3A5F9600F6A72F /* TodooUITestsLaunchTests.swift in Sources */,
+				34A525C62D3A5F9600F6A72F /* TodooUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34A525B92D3A5F9600F6A72F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34A525A62D3A5F9500F6A72F /* Todoo */;
+			targetProxy = 34A525B82D3A5F9600F6A72F /* PBXContainerItemProxy */;
+		};
+		34A525C32D3A5F9600F6A72F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34A525A62D3A5F9500F6A72F /* Todoo */;
+			targetProxy = 34A525C22D3A5F9600F6A72F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34A525C92D3A5F9600F6A72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34A525CA2D3A5F9600F6A72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34A525CC2D3A5F9600F6A72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Todoo/Preview Content\"";
+				DEVELOPMENT_TEAM = 7NAN9ZCLA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todoo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = poornam.Todoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34A525CD2D3A5F9600F6A72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Todoo/Preview Content\"";
+				DEVELOPMENT_TEAM = 7NAN9ZCLA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todoo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = poornam.Todoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34A525CF2D3A5F9600F6A72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = poornam.TodooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todoo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Todoo";
+			};
+			name = Debug;
+		};
+		34A525D02D3A5F9600F6A72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = poornam.TodooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Todoo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Todoo";
+			};
+			name = Release;
+		};
+		34A525D22D3A5F9600F6A72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = poornam.TodooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todoo;
+			};
+			name = Debug;
+		};
+		34A525D32D3A5F9600F6A72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = poornam.TodooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Todoo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34A525A22D3A5F9500F6A72F /* Build configuration list for PBXProject "Todoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A525C92D3A5F9600F6A72F /* Debug */,
+				34A525CA2D3A5F9600F6A72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A525CB2D3A5F9600F6A72F /* Build configuration list for PBXNativeTarget "Todoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A525CC2D3A5F9600F6A72F /* Debug */,
+				34A525CD2D3A5F9600F6A72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A525CE2D3A5F9600F6A72F /* Build configuration list for PBXNativeTarget "TodooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A525CF2D3A5F9600F6A72F /* Debug */,
+				34A525D02D3A5F9600F6A72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34A525D12D3A5F9600F6A72F /* Build configuration list for PBXNativeTarget "TodooUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A525D22D3A5F9600F6A72F /* Debug */,
+				34A525D32D3A5F9600F6A72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34A5259F2D3A5F9500F6A72F /* Project object */;
+}
